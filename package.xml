@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<package format="2">
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>mc_sim_highway</name>
   <version>0.0.0</version>
   <description>This package does monte-carlo simulation of highway scenario</description>
@@ -9,30 +10,10 @@
   <author email="lingguang.wang@kit.edu">Lingguang Wang</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>mrt_cmake_modules</build_depend>
+  <buildtool_depend>mrt_cmake_modules</buildtool_depend>
+  <buildtool_export_depend>mrt_cmake_modules</buildtool_export_depend>
+  
   <test_depend>gtest</test_depend>
   <depend>libboost-python-dev</depend>
-  <test_depend>gtest</test_depend>
-  <!--
-    Documentation for dependencies:
-    <build_depend>            Build-time dependency required to build
-                              this package, e.g. boost, opencv.
-    <build_export_depend>     Exported build-time dependency required to
-                              build packages that depend on this package,
-                              e.g. boost, opencv.
-    <exec_depend>             Execution dependency required to run this
-                              package, e.g. boost, opencv.
-    <depend>                  Build-time, exported build-time and execution
-                              dependency. This is a bundled synonym for
-                              <build_depend>, <build_export_depend> and
-                              <exec_depend>.
-  -->
-  <!--
-    Example:
-    <depend>mrt_opencv</depend>
-  -->
 
-  <export>
-    <!-- Other tools can request additional information be placed here -->
-  </export>
 </package>
